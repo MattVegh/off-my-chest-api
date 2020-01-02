@@ -1,3 +1,4 @@
+
 const CommentsService = {
     getAllComments(knex) {
         return knex.select('*').from('comments')

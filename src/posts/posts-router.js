@@ -4,11 +4,6 @@ const PostsService = require('./posts-service')
 const jsonParser = express.json()
 const postsRouter = express.Router()
 
-const serializedPost = post => ({
-    id: post.id,
-    title: post.title
-})
-
 postsRouter
     .route('/')
     .get((req, res, next) => {
@@ -45,7 +40,7 @@ postsRouter
             req.params.post_id
         )
         .then(post => {
-            res.json(serializedPost(post))
+            res.json(post)
         })
         .catch(next)
     })
