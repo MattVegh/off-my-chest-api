@@ -1,17 +1,20 @@
-# Express Boilerplate!
+# Off-My-Chest-API
 
-This is a boilerplate project used for starting new projects!
+This is the API project used for the Off-My-Chest app.
 
-## Set up
+# Endpoints
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+* GET /posts
+Will receive all of the posts currently in the database.
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+* GET /comments
+Will receive all of the comments currently in the database
+
+* POST /posts
+Will send the newly made post to the database.
+
+* POST /comments
+Will send the newly made comment to the database, tied to the post it's affiliated with. 
 
 ## Scripts
 
@@ -20,7 +23,3 @@ Start the application `npm start`
 Start nodemon for the application `npm run dev`
 
 Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
