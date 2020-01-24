@@ -2,6 +2,11 @@
 
 This is the API project used for the Off-My-Chest app.
 
+## Live Link
+* [Off-My-Chest](https://off-my-chest-client.mdv240.now.sh/)
+* [Database for posts](https://off-my-chest-api.herokuapp.com/posts)
+* [Database for comments](https://off-my-chest-api.herokuapp.com/comments)
+
 # Endpoints
 
 * GET /posts
@@ -16,10 +21,19 @@ Will send the newly made post to the database.
 * POST /comments
 Will send the newly made comment to the database, tied to the post it's affiliated with. 
 
-## Scripts
+## Screenshots
+The home page listing all of the posts.
+![omc-home](https://user-images.githubusercontent.com/49329279/72658163-bbeabe80-3972-11ea-8015-e681fbc7db83.png)
 
-Start the application `npm start`
+Individual post shown with comments
+![omc-post-with-comments](https://user-images.githubusercontent.com/49329279/72658170-c60cbd00-3972-11ea-8a3c-b71aca5da920.png)
 
-Start nodemon for the application `npm run dev`
+## Built With
 
-Run the tests `npm test`
+* React - The framework used
+* [Zeit](https://zeit.co) - Holds the live version
+* [Heroku](https://www.heroku.com) - Holds the database server
+
+## Author
+
+* **Matthew Vegh** 
